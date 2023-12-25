@@ -1,13 +1,26 @@
 .input-group {
    margin-bottom: 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   row-gap: 1rem;
    font-size: 1.25rem;
+   width: 100%;
+}
+
+.input-hold {
    position: relative;
+   width: 100%;
 }
 
 .input {
-   all: unset;
+   width: 100%;
+   min-width: 15.5rem;
+   padding: 1.2rem;
    color: #fff;
-   padding: 1rem;
+   background-color: rgba(48, 56, 70, 1);
+   outline: none;
    border: 1px solid #fff;
    border-radius: 10px;
    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -33,6 +46,10 @@
    color: #09d3ac;
 }
 
+.btn-hold {
+   width: 100%;
+}
+
 .btn {
    margin-left: 1.3rem;
    outline: none;
@@ -48,4 +65,10 @@
    border: 1px solid #09d3ac;
    color: #09d3ac;
    cursor: pointer;
+}
+
+.btn-add {
+   margin: 0;
+   width: 100%;
+   min-width: 17.6rem;
 }

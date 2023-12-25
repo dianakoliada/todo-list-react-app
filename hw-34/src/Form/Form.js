@@ -14,9 +14,13 @@ const Form = ({ setTodoList }) => {
 
    return (
       <form className="input-group" onSubmit={onSubmitHandler}>
-         <input type="text" id="input" className="input" required autoComplete="off" name="input" />
-         <label htmlFor="text" className="label">Enter task</label>
-         <button className="btn" type="submit">Add</button>
+         <div className='input-hold'>
+            <input type="text" id="input" className="input" required autoComplete="off" name="input" />
+            <label htmlFor="text" className="label">Enter task</label>
+         </div>
+         <div className='btn-hold'>
+            <button className="btn btn-add" type="submit">Add</button>
+         </div>
       </form>
    )
 }
